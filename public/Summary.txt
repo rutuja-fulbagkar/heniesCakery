@@ -1,0 +1,18 @@
+npm install --save-dev @types/jquery
+npm install react-owl-carousel2 owl.carousel
+npm install @fortawesome/fontawesome-free
+///////////////////
+npm i jquery
+npm install react-hook-form yup @hookform/resolvers
+
+
+////------------------->Used :
+npm install firebase
+npm install sweetalert2
+npm install emailjs-com
+
+npm install styled-components
+npm install react-lazy-load
+npm i uuid
+
+ 

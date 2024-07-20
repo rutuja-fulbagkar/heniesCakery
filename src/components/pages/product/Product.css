@@ -1,0 +1,133 @@
+.float-container {
+  position: fixed;
+  top: 33%;
+  right: -40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.float-container a {
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  margin-right: -54px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: white;
+
+  -webkit-box-shadow: 0 2px 4px #7d7d7d;
+  box-shadow: 0 2px 4px #7d7d7d;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-family: sans-serif;
+}
+
+.float-container a:hover {
+  margin-right: -50px;
+}
+
+.icon.one:before {
+  content: "\f073";
+}
+
+.icon.two:before {
+  content: "\f086";
+}
+
+.icon.three:before {
+  content: "\f1d8";
+}
+
+/* Media queries */
+@media screen and (max-width: 440px) {
+  .float-container .icon:last-child {
+    display: none;
+  }
+  .float-container {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+
+    padding-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+    width: 100%;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: auto;
+    -webkit-box-align: auto;
+    -ms-flex-align: auto;
+    align-items: auto;
+  }
+}
+
+
+
+/* enquiry animation */
+ @keyframes slideUp {
+    from {
+      transform: translateY(800px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-button {
+    animation: slideUp 1s ease-out !important;
+  }
+
+  /* placeholder */
+  input::placeholder {
+  color: #ffffff6b;  
+}
+ /* btn-blicking */
+ .button {
+   -webkit-animation: glowing 100ms infinite!important;
+  -moz-animation: glowing 100ms infinite!important;
+  -o-animation: glowing 1500ms infinite!important;
+  animation: glowing 1500ms infinite!important;
+}
+  
+@keyframes glowing {
+  0% { background-color: #ff3c3c; box-shadow: 0 0 3px #eb5353; }
+   10% { background-color: #ff7070; box-shadow: 0 0 40px #ec3131; }
+  
+}
+
+ #selectedOptions {
+  
+  list-style-type: none;
+  padding-left: 100px;
+  padding-top: 10px;
+  text-align: justify; 
+  
+}
+li::before {
+    content: "🧁 ";
+}
